@@ -9,6 +9,11 @@
 </template>
 
 <script>
+  export default {
+    created() {
+      document.title = "Notes - Dashboard"
+    }
+  }
 </script>
 
 <style scoped>
