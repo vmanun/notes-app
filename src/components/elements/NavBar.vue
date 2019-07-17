@@ -34,14 +34,13 @@
 .logo {
     height: 70px;
     width: 190px;
-    margin: 4px 0 -16px 0;
 }
 
 .user-logo {
     height: 34px;
     width: 34px;
     float: right;
-    margin: 14px;
+    margin: 20px;
     cursor: pointer;
 }
 </style>
