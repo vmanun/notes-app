@@ -17,8 +17,4 @@ export default {
 </script>
 
 <style>
-/*fonts setup*/
-.note p, .note h1 {
-    font-family: 'rasa', serif;
-}
 </style>

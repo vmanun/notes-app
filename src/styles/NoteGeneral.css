@@ -1,0 +1,112 @@
+/*Fonts*/
+p, i, h1, h2, h3, h4, h5, h6 {
+  font-family: 'rasa', serif;
+}
+
+/*General elements rules*/
+hr {
+  height: 3px;
+  border: none;
+  border-radius: 8px;
+  margin-top: -15px;
+  display: block;
+  text-align: center;
+}
+
+h1, hr, h2 {
+  margin: 10px;
+}
+
+p {
+  font-size: 17px;
+  margin: 20px;
+}
+
+.modal-images-cont {
+  margin: 0 40px 0 0;
+}
+
+.modal-images-cont > li {
+  list-style: none;
+  border-radius: 10px;
+  transition: background-color 100ms;
+}
+
+.modal-images {
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-template-rows: auto;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+} 
+
+.modal-image {
+  max-height: 25px;
+  max-width: 35px;
+  align-self: center;
+  justify-self: center;  
+}
+
+.modal-images > i {
+  align-self: center;
+  justify-self: start;
+  font-size: 20px;
+}
+
+.modal-foot {
+  margin-top: 10px;
+}
+
+.modal-foot > .dates {
+  margin: 0;
+  width: 120px;
+  height: 24px;
+}
+
+.dates {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  border-radius: 7px;
+  padding: 0;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  margin: 0 86px 0 86px;
+}
+
+.dates > p {
+  margin: 2px 0 2px 0;
+}
+
+/*Color Setup*/
+/*Aqua*/
+.aqua {
+    background-color: aqua;
+}
+  
+.aqua > .dates,
+.aqua > .modal-foot > .dates,
+.aqua > hr,
+.aqua > h2,
+.modal-images-cont > li > a > i {
+  color: #194545;
+}
+
+.aqua > .dates,
+.aqua > .modal-foot > .dates,
+.aqua > .modal-images-cont > li,
+.aqua > .modal-foot > .modal-edit,
+.aqua > hr {
+  background-color: rgb(50, 192, 192);
+}
+
+.aqua > .modal-images-cont > li:hover,
+.aqua > .modal-foot > .modal-edit:hover {
+  background-color: #2d8d8d
+  
+}
