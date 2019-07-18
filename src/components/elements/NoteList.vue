@@ -28,7 +28,7 @@ export default {
     }
   },
   methods: {
-    openNote(note = {}) {
+    openNote(note) {
       this.noteIsOpened = !this.noteIsOpened
       this.noteOpened = note 
     }
@@ -37,18 +37,17 @@ export default {
 };
 </script>
 
+
 <style>
-/*display flex setup*/
-.note-container,
-.dates {
+/*Note setup*/
+@import url('../../styles/NoteGeneral.css');
+
+/*notes container and note elements*/
+.note-container {
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
   display: flex;
-}
-
-/*notes container and note elements*/
-.note-container {
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   -ms-flex-direction: row;
@@ -80,50 +79,5 @@ export default {
   -ms-flex-grow: 2;
   flex-grow: 2;
   cursor: pointer;
-}
-
-.note > p {
-  font-size: 17px;
-}
-
-.note > hr {
-  height: 3px;
-  border: none;
-  border-radius: 5px;
-  margin-top: -15px;
-}
-
-.note > h1,
-.note > hr {
-  margin: 10px;
-}
-
-.note > p {
-  margin: 20px;
-}
-
-.dates {
-  border-radius: 7px;
-  padding: 0;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  margin: 0 86px 0 86px;
-}
-
-.dates > p {
-  margin: 2px 0 2px 0;
-}
-
-/*color setup*/
-.aqua {
-  background-color: aqua;
-}
-
-.aqua > .dates,
-.aqua > hr {
-  background-color: rgb(50, 192, 192);
-  color: #194545;
 }
 </style>

@@ -17,7 +17,10 @@ let notes = [
       "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar del mundo de la tipografía, incluso en la web. Lorem Lorem Lorem Lorem Lorem",
     summarizedContent: '',
     color: "aqua",
-    images: null,
+    images: [
+      'https://picsum.photos/700/500',
+      'https://picsum.photos/500/700'
+    ],
     dateCreated: "July 15th, 4:00PM"
   },
   {
@@ -27,7 +30,10 @@ let notes = [
       "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem  Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem ",
     summarizedContent: '',
     color: "aqua",
-    images: null,
+    images: [
+      'https://picsum.photos/500/500',
+      'https://picsum.photos/500/500'
+    ],
     dateCreated: "July 15th, 4:00PM"
   }
 ]
