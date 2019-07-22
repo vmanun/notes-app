@@ -1,0 +1,82 @@
+.modal-background{
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed; 
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(auto-fill, auto); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 90px auto auto auto;
+  background-color: aqua;
+  max-width: 570px;
+  max-height: 85%;
+}
+
+.modal-heading > .title {
+  float: left;
+  margin: inherit 0 0 inherit;
+  word-wrap: break-word;
+  max-width: 70%;
+  min-width: 100px; 
+  margin-right: 0;
+}
+
+.modal-heading > .close-modal {
+  float: right;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.modal > hr {
+  margin: 15px inherit 25px inherit;
+}
+
+.modal-content {
+  margin: -5px 20px 25px 20px;
+  text-align: justify;
+  line-height: 25px;
+  font-size: 17px; 
+  min-height: 100px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.modal-foot { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-foot > .dates{ 
+  margin-right: 30px
+}
+
+.modal-edit {
+  padding: 8px;
+  border-radius: 100%;
+  transition: background-color 200ms;
+  cursor: pointer;
+}
+
+.not-shown {
+  opacity: 0;
+  visibility: collapse;
+  transition: opacity 500ms 0ms, visibility 0s 500ms;
+}
+
+.shown{
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 500ms, visibility 0s 0ms;
+}
