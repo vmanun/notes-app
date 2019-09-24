@@ -1,7 +1,7 @@
 <template>
-  <div :class="showModal">
-      <div class="modal-background" @click="closeModal"></div>
-      <div class="modal" :class="showModal">
+  <div :class="`${showModal}`">
+      <div class="modal-background" @click="closeModal(false)"></div>
+      <div class="modal" :class="`${this.note.color}`">
         <div class="modal-heading">
           <h1 class="title">{{ note.title }}</h1>
           <img src="../../assets/img/close.png" 
@@ -9,7 +9,7 @@
             alt="Close the note"
             width="20" 
             height="20"
-            @click="closeModal">
+            @click="closeModal(false)">
         </div>
         <hr>
         <h2 class="title">Content</h2>
@@ -28,35 +28,31 @@
           <div class="dates">
             <p>{{ note.dateCreated }}</p>
           </div>
-          <img src="../../assets/img/edit.png" alt="Edit this note" height="25" class="modal-edit"> 
+          <img src="../../assets/img/edit.png" 
+            alt="Edit this note" 
+            height="25" 
+            class="modal-edit"
+            @click="closeModal({type: 'edit', note})"> 
         </div>      
     </div>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 export default {
   props: {
     show: Boolean,
     note: Object
   },
   computed: {
-    showModal: function() {
-      return typeof this.show === 'boolean' && this.show ? `shown ${this.note.color}` : 'not-shown' 
+    showModal() {
+      return typeof this.show === 'boolean' && this.show ? 'shown' : 'not-shown' 
     }
   },
-  methods: {
-    closeModal() {
-      this.$emit('onclose', this.note)
-    },
-  }
+  methods: { ...mapActions(['closeModal']) },
 }
 </script>
 
 <style>
-/*Note setup*/
-@import url('../../styles/NoteGeneral.css');
-
-/*Modal rules*/
-@import url('../../styles/Modal.css');
 </style>
