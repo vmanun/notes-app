@@ -1,0 +1,319 @@
+@import url("./fonts.css");
+
+/*Fonts*/
+p, i, h1, h2, h3, h4, h5, h6, input, textarea {
+  font-family: 'rasa', serif;
+}
+
+/*General elements rules*/
+hr {
+  height: 3px;
+  border: none;
+  border-radius: 8px;
+  margin-top: -15px;
+  display: block;
+  text-align: center;
+}
+
+h1, hr, h2 {
+  margin: 10px;
+}
+
+p {
+  font-size: 17px;
+  margin: 20px;
+}
+
+button {
+  font-family: sans-serif;
+  border: none;
+  border-radius: 50px;
+  padding: 4px 10px 4px 10px;
+  font-size: 18px; 
+  color: black;
+  cursor: pointer;
+}
+
+.note-container {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 35px;
+}
+
+.note {
+  -webkit-box-shadow: 5px 5px 15px #666, -5px -5px 15px #666;
+  -moz-box-shadow: 5px 5px 15px #666, -5px -5px 15px #666;
+  box-shadow: 5px 5px 15px #666, -5px -5px 15px #666;
+  height: 265px;
+  max-width: 300px;
+  margin: 10px;
+  -webkit-flex-basis: 300px;
+  -moz-flex-basis: 300px;
+  -ms-flex-basis: 300px;
+  flex-basis: 300px;
+  -webkit-flex-grow: 2;
+  -moz-flex-grow: 2;
+  -ms-flex-grow: 2;
+  flex-grow: 2;
+  cursor: pointer;
+}
+
+.dates {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  display: flex;
+  border-radius: 7px;
+  padding: 0;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  margin: 0 86px 0 86px;
+}
+
+.dates > p {
+  margin: 2px 0 2px 0;
+}
+
+/*Color Setup*/
+/* White */
+.white {
+  background-color: white;
+}
+
+.white > .dates,
+.white > .modal-foot > .dates,
+.white > hr,
+.white > h2,
+.white > .modal-images-cont > li > a > i,
+.white > .no-images,
+.white > .modal-foot > .color-select,
+.white > .modal-foot > .img-add,
+.white > .save-note > button{
+  color: #444444;
+}
+
+.white > .dates,
+.white > .modal-foot > .dates,
+.white > .modal-images-cont > li,
+.white > .modal-foot > .modal-edit,
+.white > hr,
+.white > .modal-foot > .color-select,
+.white > .modal-foot > .img-add,
+.white > .save-note > button{
+  background-color: rgb(173, 173, 173);
+}
+
+.white > .modal-images-cont > li:hover,
+.white > .modal-foot > .modal-edit:hover,
+.white > .modal-foot > .color-select:hover,
+.white > .modal-foot > .img-add:hover,
+.white > .save-note > button:hover {
+  background-color: #646464
+}
+
+
+/* .white :nth-child(even){
+  background-color: #B7B7B7;
+  color: #444;
+} */
+
+/*Aqua*/
+.aqua {
+    background-color: aqua;
+}
+  
+.aqua > .dates,
+.aqua > .modal-foot > .dates,
+.aqua > hr,
+.aqua > h2,
+.aqua > .modal-images-cont > li > a > i,
+.aqua > .no-images,
+.aqua > .modal-foot > .color-select,
+.aqua > .modal-foot > .img-add
+.aqua > .save-note > button{
+  color: #194545;
+}
+
+.aqua > .dates,
+.aqua > .modal-foot > .dates,
+.aqua > .modal-images-cont > li,
+.aqua > .modal-foot > .modal-edit,
+.aqua > hr,
+.aqua > .modal-foot > .color-select,
+.aqua > .modal-foot > .img-add,
+.aqua > .save-note > button{
+  background-color: rgb(50, 192, 192);
+}
+
+.aqua > .modal-images-cont > li:hover,
+.aqua > .modal-foot > .modal-edit:hover,
+.aqua > .modal-foot > .color-select:hover,
+.aqua > .modal-foot > .img-add:hover,
+.aqua > .save-note > button:hover {
+  background-color: #2d8d8d
+}
+
+/* Green */
+
+.green {
+  background-color: rgb(5, 255, 26);
+}
+
+.green > .dates,
+.green > .modal-foot > .dates,
+.green > hr,
+.green > h2,
+.green > .modal-images-cont > li > a > i,
+.green > .no-images,
+.green > .modal-foot > .color-select,
+.green > .modal-foot > .img-add
+.green > .save-note > button{
+  color: #006900;
+}
+
+.green > .dates,
+.green > .modal-foot > .dates,
+.green > .modal-images-cont > li,
+.green > .modal-foot > .modal-edit,
+.green > hr,
+.green > .modal-foot > .color-select,
+.green > .modal-foot > .img-add,
+.green > .save-note > button{
+  background-color: rgb(4, 202, 4);
+}
+
+.green > .modal-images-cont > li:hover,
+.green > .modal-foot > .modal-edit:hover,
+.green > .modal-foot > .color-select:hover,
+.green > .modal-foot > .img-add:hover,
+.green > .save-note > button:hover {
+  background-color: #166103
+}
+
+/* Yellow */
+
+.yellow {
+  background-color: yellow;
+}
+
+.yellow > .dates,
+.yellow > .modal-foot > .dates,
+.yellow > hr,
+.yellow > h2,
+.yellow > .modal-images-cont > li > a > i,
+.yellow > .no-images,
+.yellow > .modal-foot > .color-select,
+.yellow > .modal-foot > .img-add
+.yellow > .save-note > button{
+  color: #574e01;
+}
+
+.yellow > .dates,
+.yellow > .modal-foot > .dates,
+.yellow > .modal-images-cont > li,
+.yellow > .modal-foot > .modal-edit,
+.yellow > hr,
+.yellow > .modal-foot > .color-select,
+.yellow > .modal-foot > .img-add,
+.yellow > .save-note > button{
+  background-color: rgb(197, 184, 0);
+}
+
+.yellow > .modal-images-cont > li:hover,
+.yellow > .modal-foot > .modal-edit:hover,
+.yellow > .modal-foot > .color-select:hover,
+.yellow > .modal-foot > .img-add:hover,
+.yellow > .save-note > button:hover {
+  background-color: #5c4e01;
+}
+
+/* Red */
+
+.red {
+  background-color: rgb(255, 0, 0);
+}
+
+.red > .dates,
+.red > .modal-foot > .dates,
+.red > hr,
+.red > h2,
+.red > .modal-images-cont > li > a > i,
+.red > .no-images,
+.red > .modal-foot > .color-select,
+.red > .modal-foot > .img-add
+.red > .save-note > button{
+  color: #310101;
+}
+
+.red > .dates,
+.red > .modal-foot > .dates,
+.red > .modal-images-cont > li,
+.red > .modal-foot > .modal-edit,
+.red > hr,
+.red > .modal-foot > .color-select,
+.red > .modal-foot > .img-add,
+.red > .save-note > button{
+  background-color: rgb(204, 3, 3);
+}
+
+.red > .modal-images-cont > li:hover,
+.red > .modal-foot > .modal-edit:hover,
+.red > .modal-foot > .color-select:hover,
+.red > .modal-foot > .img-add:hover,
+.red > .save-note > button:hover {
+  background-color: #5e1717;
+  color: white;
+}
+
+/* Pink */
+
+.pink {
+  background-color: rgb(255, 0, 255);
+}
+
+.pink > .dates,
+.pink > .modal-foot > .dates,
+.pink > hr,
+.pink > h2,
+.pink > .modal-images-cont > li > a > i,
+.pink > .no-images,
+.pink > .modal-foot > .color-select,
+.pink > .modal-foot > .img-add
+.pink > .save-note > button{
+  color: #550058;
+}
+
+.pink > .dates,
+.pink > .modal-foot > .dates,
+.pink > .modal-images-cont > li,
+.pink > .modal-foot > .modal-edit,
+.pink > hr,
+.pink > .modal-foot > .color-select,
+.pink > .modal-foot > .img-add,
+.pink > .save-note > button{
+  background-color: rgb(197, 3, 204);
+}
+
+.pink > .modal-images-cont > li:hover,
+.pink > .modal-foot > .modal-edit:hover,
+.pink > .modal-foot > .color-select:hover,
+.pink > .modal-foot > .img-add:hover,
+.pink > .save-note > button:hover {
+  background-color: #5c175e;
+}
