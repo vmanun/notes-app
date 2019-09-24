@@ -17,4 +17,5 @@ export default {
 </script>
 
 <style>
+@import url('styles/note-general.css');
 </style>
